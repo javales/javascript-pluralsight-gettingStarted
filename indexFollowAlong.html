@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="lib/style.css">
+        
+        <script>
+            let values = [1,2,3];
+
+            console.log(values, typeof(values));
+            console.log(values.length);
+
+            console.log(values.push(44)); //add new values
+
+            console.log(values, typeof(values));
+            console.log(values.length);
+
+            result = values.pop(); //remove last value, captures that value
+            console.log(values, typeof(values));
+            console.log(values.length);
+            console.log(result);
+
+            firstRemoved = values.shift(); //remove first value, captures that value
+            console.log(values, typeof(values));
+            console.log(values.length);
+            console.log(firstRemoved);
+
+            values.push(4);
+
+            values.splice(1,1); //removes element at 1, and only one item to remove
+            console.log(values, typeof(values));
+            console.log(values.length);
+
+            values.splice(0,1,6,8); //removes one element starting at 0, and adds 6 and 8 to array
+            console.log(values, typeof(values));
+            console.log(values.length);
+
+        </script>
+    
+    </head>
+    <body>
+        <h1>Pluralsight Following Along Examples - Getting Started </h1>
+    </body>
+</html>
