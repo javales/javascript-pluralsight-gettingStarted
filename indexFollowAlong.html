@@ -5,6 +5,8 @@
         <link rel="stylesheet" href="lib/style.css">
         
         <script>
+            // Types and Arrays
+            /*
             let values = [1,2,3];
 
             console.log(values, typeof(values));
@@ -34,6 +36,67 @@
             values.splice(0,1,6,8); //removes one element starting at 0, and adds 6 and 8 to array
             console.log(values, typeof(values));
             console.log(values.length);
+            */
+
+            //
+            // Program Flow
+            //
+
+            let score = 100;
+
+            if (score > 1000) {
+                score = score + 100;
+
+            }
+            else if (score === 1000) {
+                console.log("Almost!");
+
+            }
+            else {
+                console.log("Nice try!");
+            }
+            console.log("Score is: " + score);
+
+            // Switch and Case
+
+            let state = 'TX';
+
+            switch (state) {
+                case 'NY':
+                    console.log('New York');
+                    break;
+
+                case 'TX':
+                    console.log('Texas');
+                    console.log('Austin');
+                    //leave out break to allow fall through to default
+                    //break;
+
+                default:
+                    console.log('Unknown');
+                    break;
+            }
+
+            // Looping with for()
+
+            for (let i=0; i < 5; i++) {
+                console.log(i);
+            }
+
+            // Looping with while()
+
+            let count = 1;
+            while (count < 5) {
+
+                console.log(count);
+                count ++;
+            }
+
+
+
+            
+
+
 
         </script>
     
